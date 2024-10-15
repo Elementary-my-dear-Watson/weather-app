@@ -10,4 +10,6 @@ const router = Router();
 router.get('/', (_req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, '../../client/index.html'));
 });
+
+// exporting the router to be used in server/src/routes/index.ts
 export default router;
