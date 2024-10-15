@@ -8,9 +8,17 @@ const router = Router();
 
 
 // TODO: POST Request with city name to retrieve weather data
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // TODO: GET weather data from city name
-  // TODO: save city to search history
+  const city = req.body.city;
+  try {
+    const weatherData = await WeatherService.getWeatherData(city);
+      // TODO: save city to search history
+    HistoryService.addCityToHistory(city);
+    res.json(weatherData);
+  } catch (error) {
+    res.status(404).json({ error: 'An error occurred while fetching weather data.' });
+  }
 });
 
 // TODO: GET search history
