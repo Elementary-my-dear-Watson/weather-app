@@ -74,6 +74,7 @@ I would like to thank Jacob Watson, Nick S., and David Park for their invaluable
 - Jacob Watson - API intergration, debugging, peer support.
 - Nick S. (BootCamp tutor) - Debugging.
 - David Park (BootCamp tutor) - Debugging.
+
 If you'd like to contribute to this project, please fork the repository and submit a pull request. For any major changes, please open an issue first to discuss what you'd like to change.
 
 ## Contact Information
