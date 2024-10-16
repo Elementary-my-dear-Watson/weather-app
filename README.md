@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [User story](#user-story)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -17,22 +18,52 @@
 ## Description
 An application using OpenWeather API for travelers to see a five-day weather forcast while being able to select multiple cities to help them plan their trip accordingly. This will include the temerature, wind speed,humidity, and weather conditions for each day. 
 
+The application consists of:
+- A search input where users can type in a city name.
+- A search history section where users can click on previouly searched cities.
+- A current weather display for the selected city.
+- A five-day weather forcast that includes the date, weather conditions, and important weather metrics.
+
+This involves buildiing the back-end to fetch data from OpenWeather API, then connecting it to front-end, then deploying the application to Render. 
+
+## User Story
+As A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingly
+
+
 ## Installation
 To install the necessary dependencies, run the following command:
-1. Clone the repostitory
-2. git clone SSH 
-3. cd
-4. 
 
-```
+git clone <repository-url>
 npm install
-```
+npm start
+
 
 ## Usage
-Follow the prompts to enter project details such as title, description, license, etc.
+Search for a City:
+
+1.Enter a city name in the input field and click the Search button.
+The current weather and 5-day forecast for that city will be displayed.
+
+2.View Previous Searches:
+The cities you've previously searched will appear as buttons below the search bar.
+Clicking on any of these cities will reload its weather information.
+
+3.Weather Information Displayed:
+Current temperature, wind speed, and humidity for the selected city.
+A weather icon and description of the current conditions.
+A 5-day weather forecast showing temperature, wind speed, humidity, and weather conditions.
+
+API used:
+https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+
 
 ### Demo Snapshot
 This demo shows the program's features, including generating a README file based on user inputs. Watch a demo by clicking the image above.
+
+## Deployment
+The project can be deployed to Render. 
 
 
 ## License
