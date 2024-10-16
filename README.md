@@ -1,2 +1,2 @@
 # Weather App
-An app that helps travelers see the weather outlook for multiple cities to help them plan accordingly.
+An applacation for travelers see the weather outlook of multiple cities to help them plan their trip accordingly.
