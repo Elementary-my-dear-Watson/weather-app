@@ -32,6 +32,7 @@ class WeatherService {
       throw new Error(`Error: ${response.statusText}`);
     }
     const data = await response.json();
+    console.log('Location data:', data); // Log the data being fetched
     return this.extractCoordinates(data);
   }
   private extractCoordinates(data: any): Coordinates {
