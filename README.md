@@ -8,7 +8,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 - [Acknowledgements](#acknowledgements)
@@ -39,7 +38,6 @@ git clone <repository-url>
 npm install
 npm start
 
-
 ## Usage
 Search for a City:
 
@@ -59,20 +57,11 @@ API used:
 https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 
 
-### Demo Snapshot
-This demo shows the program's features, including generating a README file based on user inputs. Watch a demo by clicking the image above.
-
-## Deployment
-The project can be deployed to Render. 
-
-
 ## License
-This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
-
-## Contributing
-If you'd like to contribute to this project, please fork the repository and submit a pull request. For any major changes, please open an issue first to discuss what you'd like to change.
+This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license
 
 ## Tests
+The project can be deployed to Render. 
 
 ## Questions
 If you have any questions about the project, feel free to contact me:
@@ -85,6 +74,7 @@ I would like to thank Jacob Watson, Nick S., and David Park for their invaluable
 - Jacob Watson - API intergration, debugging, peer support.
 - Nick S. (BootCamp tutor) - Debugging.
 - David Park (BootCamp tutor) - Debugging.
+If you'd like to contribute to this project, please fork the repository and submit a pull request. For any major changes, please open an issue first to discuss what you'd like to change.
 
 ## Contact Information
 - GitHub: [Elementary-my-dear-Watson](https://github.com/Elementary-my-dear-Watson)
