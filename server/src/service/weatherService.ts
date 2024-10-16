@@ -17,8 +17,8 @@ class Weather {
 }
 // Define the WeatherService class
 class WeatherService {
-  private baseURL: string = 'https://api.openweathermap.org/data/2.5';
-  private apiKey: string = process.env.OPENWEATHER_API_KEY || '';
+  private baseURL: string = process.env.API_BASE_URL || '';
+  private apiKey: string = process.env.API_KEY || '';
   constructor() {
     if (!this.apiKey) {
       throw new Error('API key for OpenWeather is missing. Set it in the .env file.');
@@ -75,6 +75,16 @@ class WeatherService {
       console.error(`Error: ${error.message}`);
       throw new Error('Failed to retrieve weather data.');
     }
+  }
+  // Fetch weather forecast using coordinates
+  public async fetchWeatherForecast(lat: number, lon: number) {
+    const url = `${this.baseURL}/forecast?lat=${lat}&lon=${lon}&appid=${this.apiKey}`;
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Error fetching weather forecast: ${response.statusText}`);
+    }
+    const data = await response.json();
+    return data; // You may want to return a specific part of the data
   }
 }
 // Export the WeatherService instance
