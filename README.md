@@ -25,6 +25,8 @@ The application consists of:
 
 This involves buildiing the back-end to fetch data from OpenWeather API, then connecting it to front-end, then deploying the application to Render.
 
+Live deployed application link: https://weather-app-gr94.onrender.com
+
 ![App Screenshot](./client/public/screenshot.png)
 
 ## User Story
