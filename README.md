@@ -1,4 +1,4 @@
-# Weather App
+# Nimbus Weather App
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
@@ -23,7 +23,9 @@ The application consists of:
 - A current weather display for the selected city.
 - A five-day weather forcast that includes the date, weather conditions, and important weather metrics.
 
-This involves buildiing the back-end to fetch data from OpenWeather API, then connecting it to front-end, then deploying the application to Render. 
+This involves buildiing the back-end to fetch data from OpenWeather API, then connecting it to front-end, then deploying the application to Render.
+
+![App Screenshot](./client/public/screenshot.png)
 
 ## User Story
 As A traveler
